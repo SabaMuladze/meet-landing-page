@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Properties are displayed as their px versions divided by 16 pixels */
+    --h1: 4rem;
+    --h1-line-height: 4rem;
+    --h2: 2.5rem;
+    --h2-line-height: 2.75rem;
+    --p: 1.125rem;
+    --p-line-height: 1.625rem;
+    --overline: 1rem;
+    --overline-line-height: 1.625rem;
+    --overline-color: #4D96A9;
+}
+
+.overline {
+    color: var(--overline-color);
+    font-size: var(--overline);
+    line-height: var(--overline-line-height);
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    outline: none;
+    border: none;
+    width: fit-content;
+}
+
+h1,
+h2,
+h3 {
+    color: #28283D;
+    font-weight: 900;
+}
+
+.small-h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: var(--h1);
+    line-height: var(--h1-line-height);
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: var(--h2-line-height);
+}
+
+p {
+    color: #87879D;
+    font-weight: 500;
+    font-size: var(--p);
+    line-height: var(--p-line-height);
+}
+
+header {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#chatForEveryone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txt-and-btns {
+    text-align: center;
+}
+
+.main-txt {
+    font-size: var(--h2);
+    line-height: var(--h2-line-height);
+    margin-bottom: 1.5rem;
+}
+
+.main-img-div {
+    padding-bottom: 3rem;
+}
+
+.hero-tablet,
+.hero-mobile {
+    width: 100%;
+}
+
+.hero-tablet,
+.hero-desktop-l {
+    display: none;
+}
+
+.btns-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.btn {
+    color: #fff;
+    font-weight: 900;
+    font-size: var(--p);
+    line-height: var(--p-line-height);
+    padding: 16px 40px;
+    border-radius: 29px;
+}
+
+.btn-blue {
+    background-color: #4D96A9;
+}
+
+.btn-blue span {
+    color: #8FE3F9;
+    margin-left: 4px;
+}
+
+.btn-purple {
+    background-color: #855FB1;
+}
+
+.btn-blue:hover {
+    background-color: #71C0D4;
+}
+
+.btn-purple:hover {
+    background: #B18BDD;
+}
+
+.chats-p {
+    margin-bottom: 2rem;
+}
+
+.drop {
+    height: 56px;
+    width: 56px;
+    border-radius: 50px;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background: #FAFAFA;
+    display: flex;
+    margin: calc(4rem + 84px) auto 31px auto;
+
+}
+
+.drop-2 {
+    margin: calc(4rem + 112px) auto 0 auto;
+    position: relative;
+    bottom: 28px;
+}
+
+.drop-p {
+    margin: auto;
+    font-weight: 900;
+}
+
+.drop span {
+    width: 1px;
+    height: 84px;
+    border: 1px solid #87879D;
+    opacity: 0.25;
+    position: relative;
+    left: 27px;
+    bottom: 84px;
+
+}
+
+#grid-and-txts,
+.txt-and-btns,
+footer {
+    padding: 0 1.5rem;
+}
+
+#grid-and-txts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 152px);
+    grid-template-rows: repeat(2, 144px);
+    gap: 1.35rem;
+    grid-auto-flow: dense;
+    margin-bottom: 3.5rem;
+
+}
+
+
+.img-tablet,
+.hero-desktop-r,
+.img-desktop {
+    display: none;
+}
+
+.img-phone img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.txts {
+    text-align: center;
+}
+
+footer {
+
+    height: 26.75rem;
+    object-fit: contain;
+    background: linear-gradient(rgb(77, 150, 169, 0.85), rgb(77, 150, 169, 0.85)), url(assets/mobile/image-footer.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.footer-img::after {
+    background: #4D96A9;
+    opacity: 0.5;
+}
+
+.small-h2-white,
+.p-white {
+    color: white;
+}
+
+.small-h2-white {
+    margin-top: 3.5rem;
+}
+
+.p-white {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.white-txts-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
